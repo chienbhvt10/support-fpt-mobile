@@ -31,9 +31,27 @@
 		<false/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Ứng dụng cần truy cập máy ảnh để chụp mã QR</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Ứng dụng cần truy cập thư viện ảnh để cập nhật ảnh đại diện người dùng</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Chúng tôi cần vị trí của bạn để cung cấp dịch vụ giao hàng chính xác.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+  	<string>Ứng dụng của chúng tôi cần truy cập vị trí của bạn để cung cấp dịch vụ điều hướng dựa trên vị trí, để cung cấp dịch vụ giao hàng chính xác và cải thiện trải nghiệm người dùng. Vui lòng cho phép truy cập vị trí để chúng tôi có thể cung cấp các tính năng này.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
